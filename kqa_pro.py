@@ -43,13 +43,11 @@ class KQAPro(datasets.GeneratorBasedBuilder):
     BUILDER_CONFIGS = [
         KQAProConfig(
             name=_TRAIN_CONFIG_NAME,
-            description="KQA Pro",
-            data_dir="data"
+            description="KQA Pro"
         ),
         KQAProConfig(
             name=_TEST_CONFIG_NAME,
-            description="KQA Pro",
-            data_dir="data"
+            description="KQA Pro"
         ),
     ]
 
@@ -95,12 +93,10 @@ class KQAPro(datasets.GeneratorBasedBuilder):
 
 
     def _split_generators(self, dl_manager):
-        download_dir = dl_manager.download_and_extract(_DOWNLOAD_URL)
-        data_dir = os.path.join(download_dir, self.config.data_dir)
         downloaded_files = {
-            "train": os.path.join(data_dir, "train.json"),
-            "val": os.path.join(data_dir, "val.json"),
-            "test": os.path.join(data_dir, "test.json")
+            "train": "train.json",
+            "val": "val.json",
+            "test": "test.json"
         }
 
         if self.config.name == _TEST_CONFIG_NAME:
