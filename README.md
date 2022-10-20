@@ -196,6 +196,18 @@ The Queen
 ...
 ```
 
+Then you need to send the prediction file to us by email <caosl19@mails.tsinghua.edu.cn>, we will reply to you with the performance as soon as possible.
+To appear in the learderboard, you need to also provide following information:
+
+- model name
+- affiliation
+- open-ended or multiple-choice
+- whether use the supervision of SPARQL in your model or not
+- whether use the supervision of program in your model or not
+- single model or ensemble model
+- (optional) paper link
+- (optional) code link
+
 ### Licensing Information
 
 MIT License
