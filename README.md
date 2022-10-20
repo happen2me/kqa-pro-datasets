@@ -24,7 +24,7 @@ task_ids:
 - open-domain-qa
 ---
 
-# Dataset Card for [Dataset Name]
+# Dataset Card for KQA Pro
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
