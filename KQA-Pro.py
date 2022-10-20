@@ -22,6 +22,11 @@ A large-scale, diverse, challenging dataset of complex question answering over k
 
 _URL = "https://thukeg.gitee.io/kqa-pro/"
 _DOWNLOAD_URL = "https://cloud.tsinghua.edu.cn/f/df54ff66d1dc4ca7823e/?dl=1"
+_URLS = {
+    "train": "train.json",
+    "val": "val.json",
+    "test": "test.json"
+}
 
 _TRAIN_CONFIG_NAME = "train_val"
 _TEST_CONFIG_NAME = "test"
@@ -93,11 +98,7 @@ class KQAPro(datasets.GeneratorBasedBuilder):
 
 
     def _split_generators(self, dl_manager):
-        downloaded_files = {
-            "train": "train.json",
-            "val": "val.json",
-            "test": "test.json"
-        }
+        downloaded_files = dl_manager.download_and_extract(_URLS)
 
         if self.config.name == _TEST_CONFIG_NAME:
             return [
