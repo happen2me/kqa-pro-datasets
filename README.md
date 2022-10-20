@@ -97,7 +97,7 @@ English
 
 ### Data Configs
 
-This dataset has two configs: `train_val` and `test`. Please specify this like `load_dataset('drt/KQA-Pro', 'train_val')`.
+This dataset has two configs: `train_val` and `test`. Please specify this like `load_dataset('drt/kqa_pro', 'train_val')`.
 
 ### Data Splits
 
