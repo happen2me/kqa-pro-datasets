@@ -33,6 +33,7 @@ task_ids:
   - [Supported Tasks and Leaderboards](#supported-tasks-and-leaderboards)
   - [Languages](#languages)
 - [Dataset Structure](#dataset-structure)
+  - [Data Configs](#data-configs)
   - [Data Splits](#data-splits)
 - [Additional Information](#additional-information)
   - [How to run SPARQLs and programs](#how-to-run-sparqls-and-programs)
@@ -93,6 +94,10 @@ English
     }
 ]
 ```
+
+### Data Configs
+
+This dataset has two configs: `train_val` and `test`. Please specify this like `load_dataset('drt/KQA-Pro', 'train_val')`.
 
 ### Data Splits
 
